@@ -1,7 +1,5 @@
 from django.shortcuts import render
-from .models import Event
 from rest_framework import generics
-from .serializers import EventSerializer
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from .models import Controller

@@ -13,14 +13,6 @@ class Employee(models.Model):
     def __str__(self):
         return f"{self.first_name} {self.last_name}"
     
-class Event(models.Model):
-    title = models.CharField(max_length=100)
-    description = models.TextField()
-    start_datetime = models.DateTimeField()
-
-    def __str__(self):
-        return self.title
-    
 class Controller(models.Model):
     power_on = models.BooleanField(default=False)
     offline = models.BooleanField(default=False)
