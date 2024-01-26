@@ -140,3 +140,4 @@ myproject/media
 myproject/employee_photos
 djvenv
 *.sqlite3
+__pycache__
