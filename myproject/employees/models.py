@@ -13,11 +13,3 @@ class Employee(models.Model):
     def __str__(self):
         return f"{self.first_name} {self.last_name}"
     
-class Controller(models.Model):
-    power_on = models.BooleanField(default=False)
-    offline = models.BooleanField(default=False)
-    operation_mode = models.CharField(max_length=10, choices=[
-        ('normal', 'Normal'),
-        ('standby', 'Standby'),
-        ('custom', 'Custom'),
-    ], default='normal')
